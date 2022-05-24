@@ -6,7 +6,7 @@ const Home = () => {
   const [inputValue, setInputValue] = useState('');
   const inputRef = useRef();
 
-  const handleClickOnCharacter = ({ target }) => {
+  const handleClickOnNum = ({ target }) => {
     setInputValue(inputValue += target.innerText);
     inputRef.current.focus();
   }
@@ -63,23 +63,23 @@ const Home = () => {
 
         <div className={styles.calculatorButtons}>
           <button onClick={handleClearInput} className={styles.symbol}>C</button>
-          <button onClick={handleClickOnCharacter} className={styles.symbol}>(</button>
-          <button onClick={handleClickOnCharacter} className={styles.symbol}>)</button>
-          <button onClick={handleClickOnCharacter} className={styles.symbol}>/</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>7</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>8</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>9</button>
-          <button onClick={handleClickOnCharacter} className={styles.symbol}>*</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>4</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>5</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>6</button>
-          <button onClick={handleClickOnCharacter} className={styles.symbol}>+</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>1</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>2</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>3</button>
-          <button onClick={handleClickOnCharacter} className={styles.symbol}>-</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>0</button>
-          <button onClick={handleClickOnCharacter} className={styles.btnNum}>.</button>
+          <button onClick={handleClickOnNum} className={styles.symbol}>(</button>
+          <button onClick={handleClickOnNum} className={styles.symbol}>)</button>
+          <button onClick={handleClickOnNum} className={styles.symbol}>/</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>7</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>8</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>9</button>
+          <button onClick={handleClickOnNum} className={styles.symbol}>*</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>4</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>5</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>6</button>
+          <button onClick={handleClickOnNum} className={styles.symbol}>+</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>1</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>2</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>3</button>
+          <button onClick={handleClickOnNum} className={styles.symbol}>-</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>0</button>
+          <button onClick={handleClickOnNum} className={styles.btnNum}>.</button>
           <button onClick={handleDeleteCharacter} className={styles.btnNum}><RiDeleteBack2Fill /></button>
           <button onClick={handleResultAccount} className={`${styles.equal} ${styles.symbol}`}>=</button>
         </div>
