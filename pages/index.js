@@ -16,7 +16,7 @@ const Home = () => {
     inputRef.current.focus();
   }
 
-  const handleDeleteCharacter = () => {
+  const handleDeleteNum = () => {
     if (inputValue.length > 0) {
       setInputValue(inputValue.slice(0, -1));
       inputRef.current.focus();
@@ -80,7 +80,7 @@ const Home = () => {
           <button onClick={handleClickOnNum} className={styles.symbol}>-</button>
           <button onClick={handleClickOnNum} className={styles.btnNum}>0</button>
           <button onClick={handleClickOnNum} className={styles.btnNum}>.</button>
-          <button onClick={handleDeleteCharacter} className={styles.btnNum}><RiDeleteBack2Fill /></button>
+          <button onClick={handleDeleteNum} className={styles.btnNum}><RiDeleteBack2Fill /></button>
           <button onClick={handleResultAccount} className={`${styles.equal} ${styles.symbol}`}>=</button>
         </div>
       </div>
