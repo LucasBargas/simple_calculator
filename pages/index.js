@@ -17,10 +17,8 @@ const Home = () => {
   }
 
   const handleDeleteNum = () => {
-    if (inputValue.length > 0) {
-      setInputValue(inputValue.slice(0, -1));
-      inputRef.current.focus();
-    }
+    if (inputValue.length > 0) setInputValue(inputValue.slice(0, -1));
+    inputRef.current.focus();
   }
 
   const handleResultAccount = () => {
