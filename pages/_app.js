@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Lucas Bargas - Calculadora" />
         <meta property="og:site_name" content="Lucas Bargas - Calculadora" />
-        <meta property="og:description" content="Calculadora simples desenvolvida por Lucas Bargas com o Framework NextJS e estilizada com SCSS. " />
+        <meta property="og:description" content="Calculadora simples desenvolvida por Lucas Bargas com o Framework NextJS e estilizada com SCSS." />
         <meta property="og:url" content="https://simple-calculator-lucasbargas.vercel.app/" />
       </Head>
 

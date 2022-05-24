@@ -1,0 +1,20 @@
+@import '../styles/variables.scss';
+
+.CreatorInfosContainer {
+  padding-top: 1.5rem;
+  text-align: center;
+
+  p {
+    letter-spacing: 1px;
+    font-weight: normal;
+    
+    span, a {
+      font-weight: bold;
+      color: $green-color;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  }
+}

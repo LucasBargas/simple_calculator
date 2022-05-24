@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from '../styles/Home.module.scss';
 import { RiDeleteBack2Fill } from 'react-icons/ri';
+import CreatorInfos from '../components/CreatorInfos';
 
 const Home = () => {
   const [inputValue, setInputValue] = useState('');
@@ -82,6 +83,8 @@ const Home = () => {
           <button onClick={handleResultAccount} className={`${styles.equal} ${styles.symbol}`}>=</button>
         </div>
       </div>
+
+      <CreatorInfos />
     </section>
   )
 }
