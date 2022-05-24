@@ -51,6 +51,14 @@
         padding: .875rem 0;
         font-size: 1rem;
 
+        @media (max-width: 480px) {
+          padding: 1rem 0;
+        }
+
+        @media (max-width: 390px) {
+          padding: 1.25rem 0;
+        }
+
         &.btnNum {
           background: $primary-color;
           color: $light-color;

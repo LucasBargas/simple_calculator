@@ -6,12 +6,6 @@
   box-sizing: border-box;
 }
 
-html {
-  @media (max-width: 390px) {
-    font-size: 14px;
-  }
-}
-
 body {
   background: $primary-color;
   color: $light-color;
