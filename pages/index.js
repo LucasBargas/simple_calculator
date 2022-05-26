@@ -18,13 +18,16 @@ const Home = () => {
   }
 
   const handleDeleteNum = () => {
-    if (inputValue.length > 0) setInputValue(inputValue.slice(0, -1));
-    inputRef.current.focus();
+    if (inputValue.length > 0) {
+      inputRef.current.focus();
+      setInputValue(inputValue.slice(0, -1));
+    }
   }
 
   const handleResultAccount = () => {
     try {
       const conta = eval(inputValue);
+      inputRef.current.focus();
 
       if (conta !== 0 && !conta) {
         alert('Conta inválida!');
@@ -44,10 +47,11 @@ const Home = () => {
   const handleKeyPress = ({ charCode }) => {
     if (charCode === 13) {
       if (inputValue.length === 0) {
-        alert ('Você precisa realizar uma conta para visualizar o resultado!')
-      } else {
-        handleResultAccount();
+        alert ('Você precisa realizar uma conta para visualizar o resultado!');
+        return;
       }
+
+      handleResultAccount();
     }
   }
 
@@ -58,7 +62,7 @@ const Home = () => {
   return (
     <section className={styles.calculatorContainer}>
       <div className={styles.calculatorArea}>
-        <input onKeyPress={handleKeyPress} ref={inputRef} value={inputValue} type="text" onChange={({ target }) => setInputValue(target.value)} />
+        <input ref={inputRef} value={inputValue} type="text" onKeyPress={handleKeyPress} onChange={({ target }) => setInputValue(target.value)} />
 
         <div className={styles.calculatorButtons}>
           <button onClick={handleClearInput} className={styles.symbol}>C</button>
