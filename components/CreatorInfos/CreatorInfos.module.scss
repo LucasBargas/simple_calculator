@@ -7,14 +7,23 @@
   p {
     letter-spacing: 1px;
     font-weight: normal;
-    
-    span, a {
-      font-weight: bold;
-      color: $green-color;
+  }
+
+  span, a {
+    font-weight: bold;
+    color: $green-color;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+
     }
-  
-    a {
-      text-decoration: none;
+
+    &:last-of-type {
+      margin-top: .25rem;
     }
   }
 }
