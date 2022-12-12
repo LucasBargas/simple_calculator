@@ -5,7 +5,7 @@ const CreatorInfos = () => (
     <p>
       Esta calculadora foi desenvolvida com <span>♥</span> por{' '}
       <a
-        href="https://projetoslucasbargas.com/"
+        href="https://projetoslucasbargas.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
